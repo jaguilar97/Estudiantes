@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Estudiantes</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="btn_registrar">Registrarse</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="msg_correo">Digite su correo</string>
+    <string name="msg_contraseña">Digite su contraseña</string>
+    <string name="msg_fallo_registro">No se pudo registrar el usuario</string>
+    <string name="msg_fallo_login">Usuario o contraseña incorrectos</string>
+
 </resources>
