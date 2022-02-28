@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_nav_estudiante_to_add_estudiante"
             app:destination="@id/add_estudiante" />
+        <action
+            android:id="@+id/action_nav_estudiante_to_nav_update_estudiante"
+            app:destination="@id/nav_update_estudiante" />
     </fragment>
 
     <fragment
@@ -28,11 +31,20 @@
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/add_estudiante"
-        android:name="com.example.estudiantes.add_estudiante"
+        android:name="com.example.estudiantes.ui.estudiante.AddEstudianteFragment"
         android:label="fragment_add_estudiante"
         tools:layout="@layout/fragment_add_estudiante" >
         <action
             android:id="@+id/action_add_estudiante_to_nav_estudiante"
+            app:destination="@id/nav_estudiante" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_update_estudiante"
+        android:name="com.example.estudiantes.ui.estudiante.UpdateEstudianteFragment"
+        android:label="fragment_update_estudiante"
+        tools:layout="@layout/fragment_update_estudiante" >
+        <action
+            android:id="@+id/action_nav_update_estudiante_to_nav_estudiante"
             app:destination="@id/nav_estudiante" />
     </fragment>
 </navigation>

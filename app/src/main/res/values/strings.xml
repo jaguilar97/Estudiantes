@@ -27,7 +27,15 @@
     <string name="telefono">Teléfono</string>
     <string name="email">E-mail</string>
 
+    <string name="msg_nombre_add">Nombre del estudiante</string>
+    <string name="msg_cedula_add">Cedula</string>
+    <string name="msg_edad_add">Edad</string>
+    <string name="msg_telefono_add">Teléfono</string>
+    <string name="msg_correo_add">E-mail</string>
+    <string name="msg_update">Estudiante actualizado con éxito</string>
+
     <string name="bt_Add">Guardar</string>
+    <string name="bt_Update">Actualizar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

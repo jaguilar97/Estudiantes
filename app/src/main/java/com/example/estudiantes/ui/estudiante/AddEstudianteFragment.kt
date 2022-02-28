@@ -15,7 +15,7 @@ import com.example.estudiantes.viewmodel.EstudianteViewModel
 
 class AddEstudianteFragment : Fragment(){
 
-    private lateinit var lugarViewModel: EstudianteViewModel
+    private lateinit var estudianteViewModel: EstudianteViewModel
     private var _binding: FragmentAddEstudianteBinding? = null
     private val binding get() = _binding!!
 
@@ -24,12 +24,12 @@ class AddEstudianteFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        lugarViewModel =
+        estudianteViewModel =
             ViewModelProvider(this).get(EstudianteViewModel::class.java)
 
         _binding = FragmentAddEstudianteBinding.inflate(inflater, container, false)
 
-        binding.btAgregar.setOnClickListener {
+        binding.btAdd.setOnClickListener {
             agregarEstudiante()
         }
 
@@ -44,7 +44,7 @@ class AddEstudianteFragment : Fragment(){
             val telefono=binding.txtTelefono.text.toString()
             val edad=binding.txtEdad.text.toString()
             val estudiante= Estudiante( 0,cedula, nombre, edad, correo, telefono)
-            EstudianteViewModel.addEstudiante(estudiante)
+            estudianteViewModel.addEstudiante(estudiante)
 
             Toast.makeText(requireContext(),
                 getString(R.string.msg_add_estudiante),
